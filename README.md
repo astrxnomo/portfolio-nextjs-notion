@@ -18,7 +18,7 @@ This tutorial covers setup, integration, and deployment in detail.
 ## Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
-- **Content Management**: Notion API
+- **Content Management**: Notion API v5.6.0 
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS + shadcn/ui
 - **Themes**: Light/Dark mode support
