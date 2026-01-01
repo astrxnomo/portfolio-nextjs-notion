@@ -1,0 +1,17 @@
+import { Nextjs } from "@/components/ui/nextjs-logo"
+import { Notion } from "@/components/ui/notion-logo"
+import Link from "next/link"
+
+export function PortfolioBadge() {
+  return (
+    <Link
+      href="https://felipego.com/blog/nextjs-notion-portfolio-isr"
+      target="_blank"
+      className="border-border bg-background text-foreground hover:bg-muted/50 inline-flex items-center gap-4 rounded border px-6 py-3 text-base font-medium shadow-sm transition-colors"
+    >
+      <Nextjs className="size-7" />
+      <span className="text-muted-foreground text-xl font-medium">×</span>
+      <Notion className="size-6" />
+    </Link>
+  )
+}
