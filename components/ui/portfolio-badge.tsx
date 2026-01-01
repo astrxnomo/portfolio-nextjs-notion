@@ -5,7 +5,7 @@ import Link from "next/link"
 export function PortfolioBadge() {
   return (
     <Link
-      href="https://felipego.com/blog/nextjs-notion-portfolio-isr"
+      href="https://astrxnomo.notion.site/Next-js-Notion-Databases-2da23bce200280069c63e34ad9f5de69"
       target="_blank"
       className="border-border bg-background text-foreground hover:bg-muted/50 inline-flex items-center gap-4 rounded border px-6 py-3 text-base font-medium shadow-sm transition-colors"
     >
