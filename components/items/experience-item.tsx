@@ -17,22 +17,22 @@ export function ExperienceItem({
       <h3 className="text-md text-foreground leading-tight font-medium">
         {title}
       </h3>
-      {experienceName && (
-        <p className="text-muted-foreground text-xs font-medium">
-          {experienceUrl ? (
-            <Link
-              href={experienceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-foreground"
-            >
-              {experienceName}
-            </Link>
-          ) : (
-            experienceName
-          )}
-        </p>
-      )}
+
+      {experienceName &&
+        (experienceUrl ? (
+          <Link
+            href={experienceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-foreground text-xs font-medium"
+          >
+            {experienceName}
+          </Link>
+        ) : (
+          <p className="text-muted-foreground text-xs font-medium">
+            {experienceName}
+          </p>
+        ))}
 
       <p className="text-muted-foreground text-sm leading-relaxed">
         {description}

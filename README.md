@@ -18,7 +18,7 @@ This tutorial covers setup, integration, and deployment in detail.
 ## Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
-- **Content Management**: Notion API v5.6.0 
+- **Content Management**: Notion API v5.6.0
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS + shadcn/ui
 - **Themes**: Light/Dark mode support
@@ -49,7 +49,9 @@ portfolio/
 4. Deploy!
 
 ## Deploy to Vercel
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fastrxnomo%2Fportfolio-nextjs-notion)
+
 ## Features
 
 - **ISR (Incremental Static Regeneration)**: Optimal performance with manual content updates

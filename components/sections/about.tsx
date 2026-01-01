@@ -21,6 +21,7 @@ export function About({ about }: AboutProps) {
           <h1 className="text-foreground text-3xl font-bold tracking-tight">
             {about.title}
           </h1>
+
           <div className="flex flex-wrap items-center gap-3">
             <div className="flex gap-1">
               {about.githubUrl && (
@@ -72,6 +73,7 @@ export function About({ about }: AboutProps) {
             )}
           </div>
         </div>
+
         <p className="text-muted-foreground max-w-2xl text-sm leading-relaxed">
           {about.description}
         </p>

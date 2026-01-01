@@ -1,4 +1,4 @@
-import { PortfolioBadge } from "@/components/ui/portfolio-badge"
+import { NotionBadge } from "@/components/ui/notion-badge"
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
 import type { Metadata } from "next"
@@ -69,7 +69,7 @@ export default function RootLayout({
         >
           {/* Delete this badge in production */}
           <div className="fixed top-4 left-4 z-20">
-            <PortfolioBadge />
+            <NotionBadge />
           </div>
 
           <div className="fixed top-4 right-4 z-20">
