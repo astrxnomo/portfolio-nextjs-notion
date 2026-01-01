@@ -24,7 +24,7 @@ export function ExperienceItem({
               href={experienceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-foreground underline decoration-1 underline-offset-2 transition-colors"
+              className="hover:text-foreground"
             >
               {experienceName}
             </Link>

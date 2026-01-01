@@ -5,7 +5,7 @@ import { getPropertyText } from "@/lib/utils"
 export async function getExperience(): Promise<Experience[]> {
   try {
     const response = await notion.dataSources.query({
-      data_source_id: process.env.NOTION_EXPERIENCE_DB ?? "",
+      data_source_id: process.env.NOTION_EXPERIENCE_DB_ID ?? "",
     })
 
     return response.results.map((page: any) => {

@@ -1,36 +1,63 @@
-# Felipe Giraldo - Portfolio
+# Next.js 16 Portfolio with Notion CMS
 
-A modern portfolio website with Notion integration. Write blog posts and manage projects directly in Notion, with automatic SEO optimization and bilingual support (English/Spanish).
+A modern portfolio template using Next.js 16 and Notion as a headless CMS with ISR (Incremental Static Regeneration).
 
-## 🚀 Features
+## 🚀 Quick Start
 
-- **Notion Integration**: Write content directly in Notion
-- **SEO Optimized**: Automatic metadata, Open Graph, and structured data
-- **Bilingual**: English and Spanish versions
-- **Blog System**: SEO-optimized blog posts with custom properties
-- **Project Showcase**: Portfolio projects from Notion databases
-- **Modern Tech**: Next.js 16, TypeScript, and Tailwind CSS
+Get started quickly with our step-by-step guide: **[Complete Tutorial: Build Your Portfolio](https://felipego.com/blog/nextjs-notion-portfolio-isr)**
+
+This tutorial covers setup, integration, and deployment in detail.
+
+## � Prerequisites
+
+- Node.js 18+
+- pnpm (recommended) or npm/yarn
+- Notion account
+- Vercel account
 
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
-- **Content**: Notion API
+- **Content Management**: Notion API
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Themes**: Light/Dark mode support
 - **Deployment**: Vercel
 
 ## 📁 Project Structure
 
 ```
-├── app/                    # Next.js pages
-│   ├── blog/              # Blog pages (auto-generated from Notion)
-│   ├── projects/          # Project pages (from Notion databases)
-│   ├── es/                # Spanish version
-│   └── layout.tsx         # Root layout
-├── lib/notion/            # Notion API integration
-│   ├── client.ts          # Notion connection
-│   ├── types.ts           # TypeScript interfaces
-│   └── helpers.ts         # Data extraction utilities
-├── lib/data/              # Data fetching functions
-└── components/notion-blocks/  # Notion content renderers
+portfolio/
+├── app/
+│   ├── api/revalidate/     # ISR webhook endpoint
+│   ├── globals.css         # Global styles & theme variables
+│   ├── layout.tsx          # Root layout with theme provider
+│   └── page.tsx            # Home page with ISR
+├── components/
+│   ├── items/              # Individual item components
+│   ├── sections/           # Page sections
+│   └── ui/                 # Reusable UI components
+├── lib/
+│   ├── data/               # Data fetching functions
+│   ├── notion/             # Notion API client & types
+│   └── utils.ts            # Utility functions
+└── tutorial-*.md           # Blog post tutorials
 ```
+
+1. Push to GitHub
+2. Connect to Vercel
+3. Add environment variables
+4. Deploy!
+
+## ✨ Features
+
+- **ISR (Incremental Static Regeneration)**: Optimal performance with manual content updates
+- **Notion Integration**: Manage content in Notion
+- **Responsive Design**: Mobile-first approach
+- **Theme Support**: Light/Dark mode toggle
+- **TypeScript**: Full type safety
+- **Modern UI**: shadcn/ui components
+
+## 📄 License
+
+MIT License - feel free to use this template for your own portfolio!

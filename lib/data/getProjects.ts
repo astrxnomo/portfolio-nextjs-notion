@@ -6,7 +6,7 @@ import type { Project } from "@/lib/notion/types"
 export async function getProjects(): Promise<Project[]> {
   try {
     const response = await notion.dataSources.query({
-      data_source_id: process.env.NOTION_PROJECTS_DB ?? "",
+      data_source_id: process.env.NOTION_PROJECTS_DB_ID ?? "",
     })
 
     return response.results.map((page: any) => {

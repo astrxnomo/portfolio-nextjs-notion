@@ -5,7 +5,7 @@ import { getPropertyMultiSelect, getPropertyText } from "@/lib/utils"
 export async function getAbout(): Promise<About | null> {
   try {
     const response = await notion.dataSources.query({
-      data_source_id: process.env.NOTION_ABOUT_DB ?? "",
+      data_source_id: process.env.NOTION_ABOUT_DB_ID ?? "",
       page_size: 1,
     })
 
