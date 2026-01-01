@@ -37,11 +37,10 @@ portfolio/
 │   ├── items/              # Individual item components
 │   ├── sections/           # Page sections
 │   └── ui/                 # Reusable UI components
-├── lib/
-│   ├── data/               # Data fetching functions
-│   ├── notion/             # Notion API client & types
-│   └── utils.ts            # Utility functions
-└── tutorial-*.md           # Blog post tutorials
+└── lib/
+    ├── data/               # Data fetching functions
+    ├── notion/             # Notion API client & types
+    └── utils.ts            # Utility functions
 ```
 
 1. Push to GitHub
