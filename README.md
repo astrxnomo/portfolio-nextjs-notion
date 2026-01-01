@@ -1,4 +1,4 @@
-# Next.js 16 Portfolio with Notion CMS
+# Next.js 16 ISR Portfolio with Notion CMS
 
 A modern portfolio template using Next.js 16 and Notion as a headless CMS with ISR (Incremental Static Regeneration).
 
