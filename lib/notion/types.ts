@@ -4,7 +4,7 @@ export interface About {
   id: string
   title: string
   description: string
-  contactEmail?: string
+  contact?: string
   tags: string[]
   githubUrl?: string
   linkedinUrl?: string

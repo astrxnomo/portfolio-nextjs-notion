@@ -18,7 +18,7 @@ export async function getAbout(): Promise<About | null> {
       id: page.id,
       title: getPropertyText(properties.title),
       description: getPropertyText(properties.description),
-      contactEmail: getPropertyText(properties.contactEmail),
+      contact: getPropertyText(properties.contact),
       tags: getPropertyMultiSelect(properties.tags),
       githubUrl: getPropertyText(properties.githubUrl),
       linkedinUrl: getPropertyText(properties.linkedinUrl),

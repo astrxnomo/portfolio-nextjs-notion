@@ -57,17 +57,18 @@ export function About({ about }: AboutProps) {
               )}
             </div>
 
-            <div className="bg-border h-6 w-px" />
-
-            {about.contactEmail && (
-              <Button size="sm" asChild className="h-8">
-                <Link
-                  href={`mailto:${about.contactEmail}`}
-                  aria-label="Send email"
-                >
-                  Contact
-                </Link>
-              </Button>
+            {about.contact && (
+              <>
+                <div className="bg-border h-6 w-px" />
+                <Button size="sm" asChild className="h-8">
+                  <Link
+                    href={`mailto:${about.contact}`}
+                    aria-label="Send email"
+                  >
+                    Contact
+                  </Link>
+                </Button>
+              </>
             )}
           </div>
         </div>

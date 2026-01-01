@@ -11,4 +11,3 @@ const Notion = (props: SVGProps<SVGSVGElement>) => (
 )
 
 export { Notion }
-

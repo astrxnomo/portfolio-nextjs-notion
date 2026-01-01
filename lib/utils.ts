@@ -20,6 +20,12 @@ export function getPropertyText(prop: any): string {
     return typeof prop.url === "string" ? prop.url : (prop.url.url ?? "")
   }
 
+  if (prop.email) {
+    return typeof prop.email === "string"
+      ? prop.email
+      : (prop.email.email ?? "")
+  }
+
   return ""
 }
 
