@@ -48,6 +48,8 @@ portfolio/
 3. Add environment variables
 4. Deploy!
 
+## Deploy to Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fastrxnomo%2Fportfolio-nextjs-notion)
 ## Features
 
 - **ISR (Incremental Static Regeneration)**: Optimal performance with manual content updates
