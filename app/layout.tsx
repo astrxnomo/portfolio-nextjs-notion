@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("https://felipego.com"),
+  metadataBase: new URL("https://portfolio-nextjs-notion.vercel.app/"),
   openGraph: {
     title: "Next.js + Notion Portfolio Template",
     description:
       "Modern portfolio template built with Next.js and Notion API. Perfect for developers and creatives.",
-    url: "https://felipego.com",
+    url: "https://portfolio-nextjs-notion.vercel.app/",
     type: "website",
   },
   twitter: {
