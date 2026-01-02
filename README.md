@@ -1,66 +1,79 @@
-# Next.js 16 ISR Portfolio with Notion CMS
+<div align="center">
+  <img src="https://res.cloudinary.com/dntqogcgc/image/upload/v1767316792/677shots_so_mhyjwf.png" alt="Portfolio banner" />
 
-A modern portfolio template using Next.js 16 and Notion as a headless CMS with ISR (Incremental Static Regeneration).
+  <h1>Next.js 16 ISR Portfolio with Notion CMS</h1>
 
-## Quick Start
+  <p>
+    A modern, minimal portfolio built with <strong>Next.js 16 (App Router)</strong> and
+    <strong>Notion as a headless CMS</strong>, using
+    <strong>Incremental Static Regeneration (ISR)</strong> for high performance and easy content updates.
+  </p>
 
-Get started quickly with our step-by-step guide: **[Complete Tutorial: Build Your Portfolio](https://felipego.com/blog/nextjs-notion-portfolio-isr)**
+  <p>
+    Content is managed directly from Notion and delivered with a static-first approach.<br />
+    Built with <a href="https://nextjs.org/">Next.js</a>,
+    powered by <a href="https://developers.notion.com/">Notion API v5.6.0</a>,
+    styled using <a href="https://tailwindcss.com/">Tailwind CSS</a> and
+    <a href="https://ui.shadcn.com/">shadcn/ui</a>.
+  </p>
 
-This tutorial covers setup, integration, and deployment in detail.
+  <p>
+    <a href="https://felipego.com/blog/nextjs-notion-portfolio-isr">Complete Tutorial</a> ·
+    <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fastrxnomo%2Fportfolio-nextjs-notion">Deploy with Vercel</a>
+  </p>
+</div>
 
-## Prerequisites
+---
 
-- Node.js 18+
-- pnpm (recommended) or npm/yarn
-- Notion account
-- Vercel account
+## Complete Guide
+
+This project includes a **full, in-depth tutorial** covering everything from zero to production:
+
+- Project setup
+- Notion database structure
+- Data fetching with the Notion API
+- ISR and on-demand revalidation
+- Deployment on Vercel
+
+Read the full tutorial here:  
+**https://felipego.com/blog/nextjs-notion-portfolio-isr**
 
 ## Tech Stack
 
-- **Framework**: Next.js 16 (App Router)
-- **Content Management**: Notion API v5.6.0
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS + shadcn/ui
-- **Themes**: Light/Dark mode support
-- **Deployment**: Vercel
-
-## Project Structure
-
-```
-portfolio/
-├── app/
-│   ├── api/revalidate/     # ISR webhook endpoint
-│   ├── globals.css         # Global styles & theme variables
-│   ├── layout.tsx          # Root layout with theme provider
-│   └── page.tsx            # Home page with ISR
-├── components/
-│   ├── items/              # Individual item components
-│   ├── sections/           # Page sections
-│   └── ui/                 # Reusable UI components
-└── lib/
-    ├── data/               # Data fetching functions
-    ├── notion/             # Notion API client & types
-    └── utils.ts            # Utility functions
-```
-
-1. Push to GitHub
-2. Connect to Vercel
-3. Add environment variables
-4. Deploy!
-
-## Deploy to Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fastrxnomo%2Fportfolio-nextjs-notion)
+- Next.js 16 (App Router)
+- Notion API v5.6.0
+- TypeScript
+- Tailwind CSS + shadcn/ui
+- Incremental Static Regeneration (ISR)
+- Vercel
 
 ## Features
 
-- **ISR (Incremental Static Regeneration)**: Optimal performance with manual content updates
-- **Notion Integration**: Manage content in Notion
-- **Responsive Design**: Mobile-first approach
-- **Theme Support**: Light/Dark mode toggle
-- **TypeScript**: Full type safety
-- **Modern UI**: shadcn/ui components
+- Content managed entirely from Notion  
+- Fast, static-first performance with ISR  
+- Light / Dark mode  
+- Fully typed and production-ready  
+
+
+## Project Structure
+
+```txt
+portfolio/
+├── app/
+│   ├── api/revalidate/     # ISR revalidation endpoint
+│   ├── globals.css         # Global styles and theme variables
+│   ├── layout.tsx          # Root layout and providers
+│   └── page.tsx            # Home page (ISR)
+├── components/
+│   ├── items/              # Individual UI items
+│   ├── sections/           # Page sections
+│   └── ui/                 # Shared UI components
+└── lib/
+    ├── data/               # Data fetching logic
+    ├── notion/             # Notion client and types
+    └── utils.ts            # Utility functions
+```
 
 ## License
 
-MIT License - feel free to use this template for your own portfolio!
+MIT — free to use for personal or commercial portfolios.
